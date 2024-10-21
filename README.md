@@ -29,7 +29,7 @@ This project is a simple authentication system built using Laravel and Vue.js. I
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
-    DB_DATABASE=your_database_name
+    DB_DATABASE=database_name
     DB_USERNAME=root
     DB_PASSWORD=your_password
     ```
@@ -40,19 +40,25 @@ This project is a simple authentication system built using Laravel and Vue.js. I
     php artisan migrate
     ```
 
-5. Install JavaScript dependencies:
+5. Generate the application key:
+
+    ```bash
+    php artisan key:generate
+    ```
+
+6. Install JavaScript dependencies:
 
     ```bash
     npm install
     ```
 
-6. Compile assets:
+7. Compile assets:
 
     ```bash
-    npm run dev or npm run build
+    npm run build OR npm run dev 
     ```
 
-7. Run the development server:
+8. Run the development server:
 
     ```bash
     php artisan serve
